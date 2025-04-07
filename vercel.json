@@ -1,18 +1,19 @@
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "outputDirectory": "dist",
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
     }
   ],
-  "env": {
-    "VITE_FIRECRAWL_API_KEY": "@firecrawl_api_key",
-    "VITE_AZURE_API_KEY": "@azure_api_key",
-    "VITE_AZURE_ENDPOINT": "@azure_endpoint"
-  }
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 } 
