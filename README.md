@@ -198,10 +198,10 @@ Contributions are what make the open source community such an amazing place to l
 
 For any questions or feedback, feel free to reach out:
 
-- Email: vharshith.2810@gmail.com
+- Email: harshithvaddiparthy@gmail.com
 - Twitter: [@harshithio](https://x.com/harshithio)
 
-Project Link: [https://github.com/harshith-eth/remote-job-alert](https://github.com/harshith-eth/remote-job-alert)
+Project Link: [https://github.com/harshith-eth/remote-job-alert-generator](https://github.com/harshith-eth/remote-job-alert-generator)
 
 ---
 
