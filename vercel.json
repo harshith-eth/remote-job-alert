@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm run build",
+        "outputDirectory": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "VITE_FIRECRAWL_API_KEY": "@vite_firecrawl_api_key",
+    "VITE_AZURE_API_KEY": "@vite_azure_api_key",
+    "VITE_AZURE_ENDPOINT": "@vite_azure_endpoint"
+  }
+} 
